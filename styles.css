@@ -7,6 +7,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,15 +17,125 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .home {
   width: 100%;
   height: 50%;
   background: url(images/shotsnapp-1639934235.144.png);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .home h1 {
   color: aliceblue;
   font-size: 7rem;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 5rem;
+  padding-top: 5rem;
+  text-align: left;
+  padding-left: 3rem;
+}
+
+.home button {
+  outline: 0;
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.home button p {
+  font-size: 2rem;
+}
+
+.home-btn-layout {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 1430px) {
+  .home {
+    background: url(images/shotsnapp-1440-2.png);
+    background-size: cover;
+  }
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+  background: url(images/shotsnapp-1639985926.878.png);
+  background-size: cover;
+}
+
+.about-layout p {
+  font-size: 2rem;
+  padding-left: 3rem;
+  padding-top: 5rem;
+}
+
+.about-layout {
+  width: 60vw;
+}
+
+.c-available-layout {
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.color-red {
+  background-color: rebeccapurple;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 1rem;
+}
+
+.c-available h1 {
+  font-size: 5rem;
+  padding-top: 5rem;
+  text-align: center;
+  padding-left: 3rem;
+  padding-bottom: 3rem;
+}
+
+.c-available {
+  width: 100%;
+}
+
+.contact {
+  width: 100%;
+}
+
+.contact h1 {
+  font-size: 5rem;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.contact button {
+  outline: 0;
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.email-layout {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 3rem;
 }
